@@ -1,0 +1,100 @@
+.container {
+  display: flex;
+  margin: 92px 96px 0 96px;
+
+  position: relative;
+
+  height: 100%;
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .textContainer{
+      margin-bottom: 154px;
+
+      .textIntroduce{
+        font-family: Roboto Mono, sans-serif;
+        color: var(--shape);
+        font-size: 1.5rem;
+      }
+
+      .textName{
+        font-size: 4rem;
+        color: var(--shape);
+      }
+
+      .textAbout{
+        font-size: 2rem;
+        color: var(--shape);
+        font-weight: bold;
+      }
+    }
+
+  }
+
+  .shortIntroduce{
+
+    p {
+      color: var(--shape);
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.imageContainer {
+
+  img{
+    width: 638px;
+  }
+}
+
+footer{
+
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: center;
+
+
+  margin-top: 13rem;
+
+  button {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+
+    border: 0;
+    border-radius: 0.5rem;
+
+    background: transparent;
+    padding: 1rem;
+
+    transition: background-color 0.2s;
+
+    &:hover{
+      background: var(--black);
+    }
+
+  }
+
+  p{
+    color: var(--shape);
+  }
+
+  .svg{
+    color: var(--purple-main);
+    margin-left: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+;
+
+
+
+
+}

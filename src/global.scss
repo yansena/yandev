@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --shape: #F2F2F2;
+  --shape-light: #DCDCDC;
+
+  --black: #292929;
+  --fosco: #14121D;
+
+  --purple-dark: #170C59;
+  --purple-light: #F4DCFF;
+  --purple-main: #6C63FF;
+}
+
+@media (max-width: 1080px){
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+body {
+  background: #14121D;
+}
+
+body, input, textarea, select, button {
+  font: 400 1rem "Ubuntu", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
