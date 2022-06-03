@@ -1,6 +1,7 @@
 import homeImg from '../../assets/home-coding.svg';
 import styles from './styles.module.scss';
 import { FiArrowDownCircle } from 'react-icons/fi'
+import {Footer} from "../../components/Footer";
 
 export function Home(){
   return(
@@ -26,6 +27,8 @@ export function Home(){
           <img src={homeImg} alt="Coding"/>
         </div>
       </div>
+
+      <Footer/>
 
       <footer>
         <button type="button" >
