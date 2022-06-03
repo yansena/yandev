@@ -29,7 +29,8 @@
 }
 
 body {
-  background: #14121D;
+  //background: rgb(23,12,89);
+  background: linear-gradient(355deg, rgba(23,12,89,1) 0%, rgba(20,18,29,1) 100%);
 }
 
 body, input, textarea, select, button {

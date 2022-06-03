@@ -9,6 +9,7 @@ import {Experience} from "./pages/Experience";
 import {Work} from "./pages/Work";
 import {Contact} from "./pages/Contact";
 import {Footer} from "./components/Footer";
+import {About} from "./pages/About";
 
 
 function App() {
@@ -19,11 +20,12 @@ function App() {
       <Header/>
       <Routes>
         <Route path="/" element={ <Home/> }/>
+        <Route path="/about" element={ <About/> }/>
         <Route path="/experience" element={<Experience/>}/>
         <Route path="/work" element={<Work/>}/>
         <Route path="/contact" element={<Contact/>}/>
       </Routes>
-      <Footer/>
+      {/**/}
     </>
   )
 }
