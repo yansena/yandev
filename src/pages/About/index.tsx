@@ -9,7 +9,7 @@ export function About(){
   <>
     <div className={styles.container}>
       <div className={styles.aboutContent}>
-        <div className={styles.aboutHeader}>
+        <div className={styles.aboutHeader} data-aos="zoom-out-right">
           <h1>About.me</h1>
           <p>
             Hello! My Name is Yanderson, but my friends call me as Yan,
@@ -23,7 +23,7 @@ export function About(){
           </p>
       </div>
 
-        <div className={styles.technologies}>
+        <div className={styles.technologies} data-aos="zoom-out-right">
           <h3>Here are a few technologies I’ve been working with recently:</h3>
           <div  className={styles.technologiesContainer}>
             <div className={styles.technologiesContainerDetail}>
@@ -63,7 +63,6 @@ export function About(){
       </div>
 
     </div>
-    <Footer />
   </>
   );
 }

@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import {useRef, useState} from 'react'
 import {Header} from "./components/Header";
 import { Routes, Route } from "react-router-dom";
 
@@ -14,10 +14,14 @@ import {About} from "./pages/About";
 
 function App() {
   const [count, setCount] = useState(0)
+  const articleRef = useRef(null)
+  // @ts-ignore
+  const scrollToElement = () => articleRef.current.scrollIntoView({ behavior: 'smooth' });
+
 
   return (
     <>
-      <Header/>
+      <Header onClick={scrollToElement}/>
       <Routes>
         <Route path="/" element={ <Home/> }/>
         <Route path="/about" element={ <About/> }/>

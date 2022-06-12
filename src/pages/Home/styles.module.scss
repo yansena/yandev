@@ -1,15 +1,16 @@
+.content {
+
+}
 .container {
   display: flex;
-  margin: 92px 96px 0 96px;
+  margin: 192px 96px 0 96px;
 
-  position: relative;
-
-  height: 100%;
+  height: 100vh;
 
   .header {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    //justify-content: space-between;
 
     .textContainer{
       margin-bottom: 154px;
@@ -59,7 +60,7 @@ footer{
   justify-content: center;
 
 
-  margin-top: 13rem;
+  //margin-top: 13rem;
 
   button {
     display: flex;

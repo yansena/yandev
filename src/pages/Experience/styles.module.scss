@@ -1,0 +1,108 @@
+.container {
+  margin: 192px 96px 0 96px;
+
+  display: flex;
+  height: 100vh;
+  flex-direction: row;
+
+
+  img {
+    width: 644px;
+    height: 535px;
+  }
+
+  .experienceContainer {
+
+    .experienceContainerTitle{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      h1 {
+        color: var(--shape);
+      }
+      svg {
+        color: var(--shape);
+        width: 1.5rem;
+        height: 1.5rem;
+
+        margin-left: 1rem;
+      }
+    }
+
+    .experiencesContainer {
+      display: flex;
+      align-items: center;
+
+      margin-top: 1.25rem;
+      button {
+        border: 0;
+        background: transparent;
+        color: var(--shape);
+        font-family: Roboto Mono, sans-serif;
+        font-size: 1.5rem;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        width: 100%;
+        margin-bottom: 0.8rem;
+
+        svg {
+          color: var(--purple-main);
+        }
+      }
+
+      .experienceSelected{
+        color: var(--purple-main);
+
+        transition: color 0.2s;
+      }
+
+      .arrowContainer {
+
+        margin-left: 3rem;
+        svg {
+          color: var(--shape);
+          width: 5rem;
+          height: 5rem;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+
+  .description {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 2rem;
+    .descriptionHeader {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: end;
+
+      svg {
+        color: var(--shape);
+        width: 2rem;
+        height: 2rem;
+      }
+
+      h2 {
+        color: var(--shape);
+        font-family: Roboto Mono, sans-serif;
+      }
+    }
+
+    p {
+      color: var(--shape);
+      text-align: end;
+      display: flex;
+      flex-direction: row;
+
+      margin-top: 1rem;
+    }
+  }
+}
+
