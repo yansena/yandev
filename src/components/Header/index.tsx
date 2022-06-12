@@ -5,7 +5,12 @@ import logoImg from "../../assets/Logo.svg"
 import { FaReact } from 'react-icons/fa'
 import {Link, NavLink} from "react-router-dom";
 
-export function Header(){
+interface HeaderProps{
+  onClick: () => void
+}
+
+export function Header({onClick}:HeaderProps){
+
   return(
     <header className={styles.content}>
 
@@ -14,31 +19,38 @@ export function Header(){
       </a>
 
       <div>
-        <NavLink to="/about" className={styles.link}
-           style={({ isActive }) => ({
-             color: isActive ? '#6C63FF' : '#FFFFFF',
-           })}
+        <NavLink
+          to="/about"
+          className={styles.link}
+          style={({ isActive }) => ({
+            color: isActive ? '#6C63FF' : '#FFFFFF',
+          })}
         >
           About
         </NavLink>
-        <NavLink to="/experience" className={styles.link}
+        <NavLink to="/experience"
+           className={styles.link}
            style={({ isActive }) => ({
              color: isActive ? '#6C63FF' : '#FFFFFF',
            })}
         >
           Experience
         </NavLink>
-        <NavLink to="/work" className={styles.link}
-           style={({ isActive }) => ({
-             color: isActive ? '#6C63FF' : '#FFFFFF',
-           })}
+        <NavLink
+          to="/work"
+          className={styles.link}
+          style={({ isActive }) => ({
+            color: isActive ? '#6C63FF' : '#FFFFFF',
+          })}
         >
-          Work
+          Works
         </NavLink>
-        <NavLink to="/contact" className={styles.link}
-           style={({ isActive }) => ({
-             color: isActive ? '#6C63FF' : '#FFFFFF',
-           })}
+        <NavLink
+          to="/contact"
+          className={styles.link}
+          style={({ isActive }) => ({
+            color: isActive ? '#6C63FF' : '#FFFFFF',
+          })}
         >
           Contact
         </NavLink>
