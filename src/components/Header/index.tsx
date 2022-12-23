@@ -36,16 +36,16 @@ export function Header({onClick}:HeaderProps){
         >
           Experience
         </NavLink>
-        <NavLink
+        {/* <NavLink
           to="/work"
           className={styles.link}
           style={({ isActive }) => ({
             color: isActive ? '#6C63FF' : '#FFFFFF',
           })}
         >
-          Works
-        </NavLink>
-        <NavLink
+          Projects
+        </NavLink> */}
+        {/* <NavLink
           to="/contact"
           className={styles.link}
           style={({ isActive }) => ({
@@ -53,7 +53,7 @@ export function Header({onClick}:HeaderProps){
           })}
         >
           Contact
-        </NavLink>
+        </NavLink> */}
         <a href="https://drive.google.com/file/d/1eko0WWuTeveuB4BL2EwMgFvZLSfUO14O/view?usp=sharing" className={styles.link}>Resume</a>
         <FaReact className={styles.svg}/>
       </div>
