@@ -4,12 +4,31 @@ import logoImg from "../../assets/Logo.svg"
 
 import { FaReact } from 'react-icons/fa'
 import {Link, NavLink} from "react-router-dom";
+import { useState } from 'react';
+import i18next from 'i18next';
+import { useTranslation } from 'react-i18next';
 
 interface HeaderProps{
   onClick: () => void
 }
 
 export function Header({onClick}:HeaderProps){
+
+  const { t } = useTranslation();
+
+  const [lang, setLang] = useState('en');
+
+  function changeLanguage(){
+    if(lang === 'en'){
+      setLang('pt-BR')
+      i18next.changeLanguage('pt-BR')
+    } else {
+      setLang('en')
+      i18next.changeLanguage('en')
+    }
+  }
+
+
 
   return(
     <header className={styles.content}>
@@ -26,7 +45,7 @@ export function Header({onClick}:HeaderProps){
             color: isActive ? '#6C63FF' : '#FFFFFF',
           })}
         >
-          About
+          {t('about')}
         </NavLink>
         <NavLink to="/experience"
            className={styles.link}
@@ -34,7 +53,7 @@ export function Header({onClick}:HeaderProps){
              color: isActive ? '#6C63FF' : '#FFFFFF',
            })}
         >
-          Experience
+          {t('experience')}
         </NavLink>
         {/* <NavLink
           to="/work"
@@ -55,7 +74,15 @@ export function Header({onClick}:HeaderProps){
           Contact
         </NavLink> */}
         <a href="https://drive.google.com/file/d/1eko0WWuTeveuB4BL2EwMgFvZLSfUO14O/view?usp=sharing" className={styles.link}>Resume</a>
-        <FaReact className={styles.svg}/>
+        <button  
+          className={styles.translateButton} 
+          onClick={changeLanguage}
+          about='Translate Button'
+          aria-label='Translate'
+        >
+          <p>{t('translate')}</p>
+          <FaReact className={styles.svg}/>
+        </button>
       </div>
 
     </header>

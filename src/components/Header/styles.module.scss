@@ -29,13 +29,32 @@
       }
     }
   }
+  
+  .translateButton {
+    background-color: transparent;
+    border: 0;
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+
+    margin: 1rem 1rem;
+    p {
+      color: var(--shape);
+
+      &:hover {
+        color: var(--purple-main);
+        cursor: pointer;
+      }
+    }
+  }
 
   .svg {
-    width: 50px;
-    height: 50px;
-    //background: darkviolet;
+    width: 25px;
+    height: 25px;
 
-    margin-left: 1.5rem;
+    margin-left: 0.5rem;
     color: #FFFFFF;
 
     transition: transform 0.5s, color 0.5s;
@@ -50,4 +69,5 @@
     }
 
   }
+  
 }

@@ -4,12 +4,15 @@ import { Routes, Route } from "react-router-dom";
 
 import './global.scss';
 
+
 import {Home} from "./pages/Home";
 import {Experience} from "./pages/Experience";
 import {Work} from "./pages/Work";
 import {Contact} from "./pages/Contact";
 import {Footer} from "./components/Footer";
 import {About} from "./pages/About";
+
+import { useTranslation } from 'react-i18next'
 
 
 function App() {
